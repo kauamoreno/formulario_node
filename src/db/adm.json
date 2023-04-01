@@ -1,0 +1,24 @@
+{
+    "adm": [
+        {
+            "usuario": "admin",
+            "senha": "admin"
+        },
+        {
+            "usuario": "joao",
+            "senha": "senha123"
+        },
+        {
+            "usuario": "maria",
+            "senha": "123456"
+        },
+        {
+            "usuario": "pedro",
+            "senha": "senhaforte"
+        },
+        {
+            "usuario": "ana",
+            "senha": "senhasegura"
+        }
+    ]
+}
