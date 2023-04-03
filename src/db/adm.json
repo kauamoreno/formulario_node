@@ -1,24 +1,58 @@
 {
-    "adm": [
-        {
-            "usuario": "admin",
-            "senha": "admin"
-        },
-        {
-            "usuario": "joao",
-            "senha": "senha123"
-        },
-        {
-            "usuario": "maria",
-            "senha": "123456"
-        },
-        {
-            "usuario": "pedro",
-            "senha": "senhaforte"
-        },
-        {
-            "usuario": "ana",
-            "senha": "senhasegura"
-        }
-    ]
+  "adm": [
+    {
+      "usuario": "admin",
+      "senha": "admin"
+    },
+    {
+      "usuario": "joao",
+      "senha": "senha123"
+    },
+    {
+      "usuario": "maria",
+      "senha": "123456"
+    },
+    {
+      "usuario": "pedro",
+      "senha": "senhaforte"
+    },
+    {
+      "usuario": "ana",
+      "senha": "senhasegura"
+    }
+  ],
+  "cadastro": [
+    {
+      "id": 0,
+      "nome": "Kauã Moreno",
+      "nascimento": "18/05;2005",
+      "cpf": "123",
+      "email": "dzsfsdf@gsdgr",
+      "telefone": "2342",
+      "endereco": "423423",
+      "nomePlano": "4234",
+      "info": "4234"
+    },
+    {
+      "nome": "testeeeeeeeeeeeeeeeeeee",
+      "nascimento": "2023-04-12",
+      "cpf": "222",
+      "email": "213123@fdsfdsf",
+      "telefone": "(21) 34124-1232",
+      "endereco": "312323",
+      "nomePlano": "bandeirantes",
+      "info": "",
+      "id": 2
+    },
+    {
+      "nome": "213123",
+      "nascimento": "2005-05-20",
+      "cpf": "777",
+      "email": "345@sdfsdf",
+      "telefone": "(32) 13131-2312",
+      "endereco": "12312321",
+      "info": "312312",
+      "id": 3
+    }
+  ]
 }
