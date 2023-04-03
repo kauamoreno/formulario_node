@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="assets/css/form.css" />
+</head>
+
+<body>
+    <section class="container">
+        <div class="titulo">Cadastrando Paciente</div>
+
+        <form onsubmit="event.preventDefault(); enviarDados()" class="form">
+            <div class="input-box">
+                <label>Nome Completo</label>
+                <input type="text" placeholder="ex. Kauã Amaral Moreno" id="nome" autocomplete="off" required />
+            </div>
+
+            <div class="input-box">
+                <label>CPF</label>
+                <input type="text" maxlength="14" placeholder="ex. 123.456.789-10" id="cpf" autocomplete="off"
+                    required />
+            </div>
+
+            <div class="input-box">
+                <label>Email</label>
+                <input type="text" id="email" placeholder="ex. kaua@gmail.com" autocomplete="off" required />
+            </div>
+
+            <div class="column">
+                <div class="input-box">
+                    <label>Telefone</label>
+                    <input type="text" placeholder="ex. (11) 91234-1234" id="telefone" maxlength="15" autocomplete="off"
+                        required />
+                </div>
+                <div class="input-box">
+                    <label>Data de nascimento</label>
+                    <input type="date" id="nascimento" placeholder="Enter birth date" required />
+                </div>
+            </div>
+            <div class="planosDeSaude">
+                <h3>Plano de saúde</h3>
+                <div class="planosOpcoes">
+                    <div class="plano">
+                        <input type="radio" id="sepaco" name="plano" checked />
+                        <label for="sepaco">SEPACO</label>
+                    </div>
+                    <div class="plano">
+                        <input type="radio" id="bandeirantes" name="plano" />
+                        <label for="bandeirantes">Bandeirantes</label>
+                    </div>
+                    <div class="plano">
+                        <input type="radio" id="outro" name="plano" />
+                        <label for="outro">Outro</label>
+                    </div>
+                    <div class="plano">
+                        <input type="radio" id="naoPossui" name="plano" />
+                        <label for="naoPossui">Não Possui</label>
+                    </div>
+                </div>
+            </div>
+            <div class="input-box endereco">
+                <label>Endereço</label>
+                <input type="text" placeholder="ex. rua Jair dos Limões" id="endereco" autocomplete="off" required />
+            </div>
+            <div class="input-box">
+                <label>Informações Adicionais</label>
+                <input type="text" id="info" autocomplete="off" />
+            </div>
+            <input type="submit" value="Cadastrar" id="cadastroBotao">
+        </form>
+    </section>
+
+    <script src="./assets/js/mascaras.js"></script>
+    <script src="../src/crud.js"></script>
+</body>
+
+</html>

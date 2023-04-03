@@ -1,38 +1,38 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CRUD Node</title>
+  <link rel="stylesheet" href="assets/css/style.css">
+  <title>Login</title>
 </head>
 <body>
-    <form action="">
-        <label for="">Nome Completo</label>
-        <input type="text" placeholder="ex. Kauã Amaral Moreno" id="nome" required> <br><br>
-
-        <label for="">Data de nascimento</label>
-        <input type="date" id="nascimento" required> <br><br>
-
-        <label for="">CPF</label>
-        <input type="text" maxlength="14" placeholder="ex. 123.456.789-10" id="cpf" required> <br><br>
-
-        <label for="">Email</label>
-        <input type="email" placeholder="ex. kaua@gmail.com" id="email" required> <br><br>
-
-        <label for="">Telefone</label>
-        <input type="text" placeholder="ex. (11) 91234-1234" id="telefone" maxlength="15" required> <br><br>
-
-        <label for="">Endereço</label>
-        <input type="text" placeholder="ex. rua Jair dos Limões" id="endereco" required> <br><br>
-
-        <label for="">Nome do plano de saúde</label>
-        <input type="text" placeholder="ex. Golden Cross" id="nomePlano" required> <br><br>
+    <section>
+        <div class="form-box">
+            <div class="form-value">
+                <form onsubmit="event.preventDefault(); fazerLogin()">
+                    <h2>ADM Login</h2>
+                    <div class="input">
+                        <ion-icon name="mail-outline"></ion-icon>
+                        <input type="text" id="usuario" autocomplete="off" required>
+                        <label for="">Usuario</label>
+                    </div>
+                    <div class="input">
+                        <ion-icon name="lock-closed-outline"></ion-icon>
+                        <input type="password" id="senha" autocomplete="off" required>
+                        <label for="">Senha</label>
+                    </div>
+                    <div class="lembrar">
+                        <label for=""><input type="checkbox">Lembrar login</label>
+                    </div>
+                    <input type="submit" value="Entrar" id="entrarBotao">
+                </form>
+            </div>
+        </div>
+    </section>
     
-        <label for="">Informações Adicionais</label>
-        <textarea cols="30" rows="10" id="info" required></textarea>
-    </form>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 
-    <script src="mascaras.js"></script>
+    <script src="../src/login.js"></script>
 </body>
 </html>

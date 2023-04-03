@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'poppins',sans-serif;
+}
+section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    width: 100%;
+    
+    background: url('../img/background.jpg')no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.form-box{
+    position: relative;
+    width: 400px;
+    height: 450px;
+    background: transparent;
+    border: 2px solid rgba(255,255,255,0.5);
+    border-radius: 20px;
+    backdrop-filter: blur(15px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+h2{
+    font-size: 2em;
+    /* color: #fff; */
+    color: black;
+    text-align: center;
+}
+.input{
+    position: relative;
+    margin: 30px 0;
+    width: 310px;
+    border-bottom: 2px solid #fff;
+}
+.input label{
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    transform: translateY(-50%);
+    /* color: #fff; */
+    color: black;
+    font-size: 1em;
+    pointer-events: none;
+    transition: .5s;
+}
+input:focus ~ label,
+input:valid ~ label{
+top: -5px;
+}
+.input input {
+    width: 100%;
+    height: 50px;
+    background: transparent;
+    border: none;
+    outline: none;
+    font-size: 1em;
+    padding:0 35px 0 5px;
+    color: rgb(65, 64, 64);;
+
+}
+.input ion-icon{
+    position: absolute;
+    right: 8px;
+    /* color: #fff; */
+    color: black;
+    font-size: 1.2em;
+    top: 20px;
+}
+.lembrar{
+    margin: -15px 0 15px ;
+    font-size: .9em;
+    color: #fff;
+    color: rgb(65, 64, 64);
+    display: flex;
+    justify-content: space-between;  
+}
+
+.lembrar label input{
+    margin-right: 3px;
+    
+}
+.lembrar label a{
+    color: #fff;
+    text-decoration: none;
+}
+.lembrar label a:hover{
+    text-decoration: underline;
+}
+#entrarBotao{
+    width: 100%;
+    height: 40px;
+    border-radius: 40px;
+    background: rgb(130, 106, 251);
+    color: #f1f1f1;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-size: 1em;
+    font-weight: 600;
+}
+
+#entrarBotao:hover{
+    transition: 300ms;
+    background: rgb(88, 56, 250);
+}
