@@ -1,6 +1,3 @@
-
-<img width="830" alt="PWBE" src="https://user-images.githubusercontent.com/119445003/229534141-7000b7af-f5b1-4126-8450-1303c2853915.png">
-
 <h1 align="center">Formulário de Cadastro de Paciente</h1>
 
 Este projeto é um sistema backend construído em Node.js que permite aos atendentes gerenciar informações em um banco de dados, <br> utilizando as operações CRUD (Create, Read, Update e Delete).
