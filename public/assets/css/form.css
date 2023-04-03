@@ -117,7 +117,7 @@ body {
   font-size: 1rem;
 }
 
-.form #cadastroBotao {
+.form .btnForm {
   height: 55px;
   width: 100%;
   color: #fff;
@@ -130,9 +130,25 @@ body {
   background: rgb(130, 106, 251);
 }
 
-.form #cadastroBotao:hover {
+.form .btnForm:hover {
   transition: 300ms;
   background: rgb(88, 56, 250);
+}
+
+#deletarBTN {
+  background-color: rgb(255, 0, 0);
+}
+#deletarBTN:hover {
+  transition: 300ms;
+  background: rgba(255, 0, 0, 0.8);
+}
+
+#atualizarBTN {
+  background-color: rgb(0, 128, 0);
+}
+#atualizarBTN:hover {
+  transition: 300ms;
+  background: rgba(0, 128, 0, 0.8);
 }
 
 @media screen and (max-width: 500px) {
