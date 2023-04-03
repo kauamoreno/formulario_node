@@ -1,6 +1,8 @@
 
 // POST
 function enviarDados() {
+
+    //Pegando os dados
     const nome = document.getElementById('nome').value
     const nascimento = document.getElementById('nascimento').value
     const cpf = document.getElementById('cpf').value
@@ -10,6 +12,7 @@ function enviarDados() {
     const nomePlano = plano()
     const info = document.getElementById('info').value
 
+    // Conectando com o banco de dados e usando o metodo POST
     fetch("http://localhost:3000/cadastro", {
         method: "POST",
         headers: {
@@ -31,6 +34,8 @@ function enviarDados() {
 
 // PUT
 function mudarDados() {
+
+    //Pegando os dados
     const nome = document.getElementById('nome').value
     const nascimento = document.getElementById('nascimento').value
     const cpf = document.getElementById('cpf').value
@@ -40,10 +45,14 @@ function mudarDados() {
     const nomePlano = plano()
     const info = document.getElementById('info').value
 
+    //Conectando com o  banco de dados através do cpf
     fetch(`http://localhost:3000/cadastro?cpf=${cpf}`).then(response => response.json())
         .then(data => {
+
+            //Buscando o id do usario
             let id = data[0].id
 
+            //Usando o id para o metodo PUT
             fetch(`http://localhost:3000/cadastro/${id}`, {
                 method: "PUT",
                 headers: {
@@ -62,8 +71,6 @@ function mudarDados() {
             }).then(response => response.json())
 
         })
-
-
 }
 
 
@@ -81,6 +88,7 @@ if (window.location.pathname === '/public/gpd.html') {
             showLoaderOnConfirm: true,
             preConfirm: (cpf) => {
 
+                //Conectando com o  banco de dados através do cpf e aplicando o metodo GET
                 return fetch(`http://localhost:3000/cadastro?cpf=${cpf}`, {
                     method: "GET"
                 }).then(response => response.json())
@@ -95,7 +103,8 @@ if (window.location.pathname === '/public/gpd.html') {
                         document.getElementById(`${data[0].nomePlano}`).checked = true;
                         document.getElementById('info').value = data[0].info
                     })
-                    .catch(error => {
+                    .catch(error => { // Tratando erro
+                         
                         Swal.showValidationMessage(
                             `CPF invalido! Insira outro`
                         )
@@ -103,6 +112,8 @@ if (window.location.pathname === '/public/gpd.html') {
             },
             allowOutsideClick: () => !Swal.isLoading(),
         }).then((result) => {
+
+            //Quando confirmado, mostrar o formulario
             if (result.isConfirmed) {
                 document.querySelector('.container').style.display = 'block'
             }
@@ -122,6 +133,8 @@ function deletarDados() {
         confirmButtonText: 'Confirmo a deletação!'
     }).then((result) => {
         if (result.isConfirmed) {
+
+            //Pega o cpf do formulario
             const cpf = document.getElementById('cpf').value
             console.log(cpf);
 
@@ -130,23 +143,26 @@ function deletarDados() {
                 'O cadastro foi deletado',
                 'success'
             )
-            setTimeout(function () {
+            setTimeout(function () { //Colocando um timer de 1500ms para apagar o usuario
+
+                //Conectando com o banco de dados atraves do cpf 
                 fetch(`http://localhost:3000/cadastro?cpf=${cpf}`).then(response => response.json())
                     .then(data => {
+                        //Pegando o id do usuario no banco de dados
                         let id = data[0].id
 
+                        //Usando o id para deletar o usuario do banco de dados
                         fetch(`http://localhost:3000/cadastro/${id}`, {
                             method: "DELETE"
                         }).then(response => response.json())
 
                     })
             }, 1500);
-
         }
     })
 }
 
-
+//Retorna o plano de saude selecionado pelo usuario
 function plano() {
     const opcoes = document.querySelectorAll('input[name="plano"]');
     let opcaoSelecionada;
@@ -155,7 +171,6 @@ function plano() {
 
         if (opcoes[i].checked) {
             opcaoSelecionada = opcoes[i].id
-            // console.log(opcaoSelecionada);
             return opcaoSelecionada;
         }
     }
