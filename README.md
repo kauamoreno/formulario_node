@@ -1,5 +1,22 @@
-Formulário de Cadastro de Paciente<br><br>
-Este formulário tem 8 campos: nome completo, data de nascimento, CPF, email, telefone, <br>
-endereço, nome do plano de saúde e informações adicionais.
 
-<img width="650" alt="fluxo" src="https://user-images.githubusercontent.com/119445003/229303689-59d71fad-ef33-43fa-a6b4-e228c6ab3e1f.png">
+<img width="830" alt="PWBE" src="https://user-images.githubusercontent.com/119445003/229534141-7000b7af-f5b1-4126-8450-1303c2853915.png">
+
+<h1 align="center">Formulário de Cadastro de Paciente</h1>
+
+Este projeto é um sistema backend construído em Node.js que permite aos atendentes gerenciar informações em um banco de dados, <br> utilizando as operações CRUD (Create, Read, Update e Delete).
+<br><br>
+
+
+<img width="650" alt="PWBE" src="https://user-images.githubusercontent.com/119445003/229531857-6d3a7d36-4159-49fc-a828-2cce7b55b050.png">
+
+
+<br><br>
+
+## Licença
+Este projeto está sob a licença MIT, para mais informações consulte o arquivo [LICENSE](LICENSE) .
+<br><br>
+
+> Feito por Kauã Moreno 
+
+[![linkedin](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/kauamoreno/)
+[![email](https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:kaua.moreno2005@gmail.com)
