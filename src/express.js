@@ -5,7 +5,7 @@ const express = require('express');
 const app = express();
 
 // Definindo a porta do servidor
-const port = 3000;
+const port = 8080;
 
 // Função para ser executada em cada requisição feita ao servidor
 app.use(express.static('./public'));
