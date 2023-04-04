@@ -6,7 +6,7 @@ Este projeto é um sistema backend construído em Node.js que permite aos atende
 ### Pré-requisitos
 Antes de começar, certifique-se de ter instalado em sua máquina:
 
-* Node.js - Se você ainda não o tiver, faça o download em https://nodejs.org/en/download/ e siga as instruções de instalação para o seu sistema operacional.
+* Node.js - Se você ainda não o tiver, faça o download em https://nodejs.org/en/download/
 * JSON Server
 ~~~cmd
 //Instalando JSON Server
