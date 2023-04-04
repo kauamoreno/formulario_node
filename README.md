@@ -1,6 +1,6 @@
 <h1 align="center">Formulário de Cadastro de Paciente</h1>
 
-Este projeto é um sistema backend construído em Node.js que permite aos atendentes gerenciar informações em um banco de dados, <br> utilizando as operações CRUD (Create, Read, Update e Delete).
+Este projeto é um sistema backend construído em Node.js que permite aos atendentes gerenciar informações em um banco de dados, utilizando as operações CRUD (Create, Read, Update e Delete).
 <br><br>
 
 ### Pré-requisitos
