@@ -81,7 +81,9 @@ if (window.location.pathname === '/public/gpd.html') {
             title: 'CPF do paciente',
             input: 'text',
             inputAttributes: {
-                autocapitalize: 'off'
+                autocapitalize: 'off',
+                maxlength: 14,
+                onkeypress: 'formatarCPF(this)'
             },
             showCancelButton: false,
             confirmButtonText: 'Pesquisar',
@@ -104,7 +106,7 @@ if (window.location.pathname === '/public/gpd.html') {
                         document.getElementById('info').value = data[0].info
                     })
                     .catch(error => { // Tratando erro
-                         
+                        
                         Swal.showValidationMessage(
                             `CPF invalido! Insira outro`
                         )
