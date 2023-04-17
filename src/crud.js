@@ -33,8 +33,7 @@ function enviarDados() {
 
 
 // PUT
-function mudarDados() {
-
+function mudarDados() {    
     //Pegando os dados
     const nome = document.getElementById('nome').value
     const nascimento = document.getElementById('nascimento').value

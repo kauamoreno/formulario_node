@@ -20,12 +20,6 @@ cpf.addEventListener('keypress', () => {
     formatarCPF(cpf);
 });
 
-// const cpfSweet = document.querySelector('input.swal2-input')
-// cpfSweet.addEventListener('keypress', () => {
-//     // formatarCPF(cpfSweet);
-//     console.log(cpfSweet.value);
-// });
-
 /******************** MASCARA TELEFONE *********************/
 const telefone = document.querySelector('#telefone');
 
