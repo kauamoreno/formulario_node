@@ -5,8 +5,8 @@ FROM node:18
 # Set the working directory in the container
 WORKDIR /app
 
-# Expose port 3000
-EXPOSE 3000
+# Expose port 8080
+EXPOSE 8080
 
 # Copy the application files into the working directory
 COPY . /app
