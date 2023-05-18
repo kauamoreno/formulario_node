@@ -16,7 +16,7 @@ function formatarCPF(cpf) {
 }
 
 const cpf = document.querySelector('#cpf')
-cpf.addEventListener('keypress', () => {
+cpf.addEventListener('input', () => {
     formatarCPF(cpf);
 });
 
