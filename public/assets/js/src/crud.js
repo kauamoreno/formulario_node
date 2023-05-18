@@ -13,7 +13,7 @@ function enviarDados() {
     const info = document.getElementById('info').value
 
     // Conectando com o banco de dados e usando o metodo POST
-    fetch("http://localhost:3000/cadastro", {
+    fetch("/cadastro", {
         method: "POST",
         headers: {
             'content-type': 'application/json'
@@ -29,6 +29,8 @@ function enviarDados() {
             info: info
         })
     }).then(response => response.json())
+
+    window.location.reload();
 }
 
 
@@ -45,14 +47,14 @@ function mudarDados() {
     const info = document.getElementById('info').value
 
     //Conectando com o  banco de dados através do cpf
-    fetch(`http://localhost:3000/cadastro?cpf=${cpf}`).then(response => response.json())
+    fetch(`/cadastro?cpf=${cpf}`).then(response => response.json())
         .then(data => {
 
             //Buscando o id do usario
             let id = data[0].id
 
             //Usando o id para o metodo PUT
-            fetch(`http://localhost:3000/cadastro/${id}`, {
+            fetch(`/cadastro/${id}`, {
                 method: "PUT",
                 headers: {
                     'content-type': 'application/json'
@@ -69,12 +71,13 @@ function mudarDados() {
                 })
             }).then(response => response.json())
 
+            Swal.fire('Dados atualizados');
         })
 }
 
 
 // GET
-if (window.location.pathname === '/public/gpd.html') {
+if (window.location.pathname === '/gpd.html') {
     window.onload = function () {
         Swal.fire({
             title: 'CPF do paciente',
@@ -90,7 +93,7 @@ if (window.location.pathname === '/public/gpd.html') {
             preConfirm: (cpf) => {
 
                 //Conectando com o  banco de dados através do cpf e aplicando o metodo GET
-                return fetch(`http://localhost:3000/cadastro?cpf=${cpf}`, {
+                return fetch(`/cadastro?cpf=${cpf}`, {
                     method: "GET"
                 }).then(response => response.json())
                     .then(data => {
@@ -147,16 +150,18 @@ function deletarDados() {
             setTimeout(function () { //Colocando um timer de 1500ms para apagar o usuario
 
                 //Conectando com o banco de dados atraves do cpf 
-                fetch(`http://localhost:3000/cadastro?cpf=${cpf}`).then(response => response.json())
+                fetch(`/cadastro?cpf=${cpf}`).then(response => response.json())
                     .then(data => {
                         //Pegando o id do usuario no banco de dados
                         let id = data[0].id
 
                         //Usando o id para deletar o usuario do banco de dados
-                        fetch(`http://localhost:3000/cadastro/${id}`, {
+                        fetch(`/cadastro/${id}`, {
                             method: "DELETE"
                         }).then(response => response.json())
-
+                        
+                        window.location.reload();
+                        
                     })
             }, 1500);
         }

@@ -2,7 +2,7 @@ function fazerLogin(){
     const usuario = document.getElementById('usuario').value
     const senha = document.getElementById('senha').value
 
-    fetch('http://localhost:3000/adm').then(response => response.json())
+    fetch('/adm').then(response => response.json())
     .then(data => {
         let verificaEntrada = false;
 
