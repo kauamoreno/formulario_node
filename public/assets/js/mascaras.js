@@ -16,14 +16,14 @@ function formatarCPF(cpf) {
 }
 
 const cpf = document.querySelector('#cpf')
-cpf.addEventListener('input', () => {
+cpf.addEventListener('keypress', () => {
     formatarCPF(cpf);
 });
 
 /******************** MASCARA TELEFONE *********************/
 const telefone = document.querySelector('#telefone');
 
-telefone.addEventListener('input', () => {
+telefone.addEventListener('keypress', () => {
 
     let telTamanho = telefone.value.length
     let codigoTecla = event.keyCode;
