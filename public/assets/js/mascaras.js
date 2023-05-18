@@ -23,7 +23,7 @@ cpf.addEventListener('input', () => {
 /******************** MASCARA TELEFONE *********************/
 const telefone = document.querySelector('#telefone');
 
-telefone.addEventListener('keypress', () => {
+telefone.addEventListener('input', () => {
 
     let telTamanho = telefone.value.length
     let codigoTecla = event.keyCode;
