@@ -3,18 +3,15 @@
 Este projeto é um sistema backend construído em Node.js que permite aos atendentes gerenciar informações em um banco de dados, utilizando as operações CRUD (Create, Read, Update e Delete).
 <br><br>
 
-### Pré-requisitos
-Antes de começar, certifique-se de ter instalado em sua máquina:
+## Dicas de uso
+* Link para o site: [crud1-kauamoreno2005.b4a.run/](crud1-kauamoreno2005.b4a.run/)
+* O sevidor é dasabilitado quando fica inativo por 30 min, por isso o site pode demorar 1 min para entrar<br>
 
-* Node.js - Se você ainda não o tiver, faça o download em https://nodejs.org/en/download/
-* JSON Server
-~~~cmd
-# Instalando JSON Server
-npm install json-server
+#### Usuario e senha de administrador:
+* <b>login:</b> admin - <b>senha:</b> admin
+* <b>login:</b> pedro - <b>senha:</b> senhaforte
+* <b>login:</b> ana - <b>senha:</b> senhasegura
 
-# Rodando o banco de dados
-npx json-server src/db/adm.json
-~~~
 <br>
 
 ## Fluxograma
