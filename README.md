@@ -1,30 +1,32 @@
-<h1 align="center">Formulário de Cadastro de Paciente</h1>
+<h1 align="center">Patient Registration Form</h1>
 
-Este projeto é um sistema backend construído em Node.js que permite aos atendentes gerenciar informações em um banco de dados, utilizando as operações CRUD (Create, Read, Update e Delete).
+This project is a backend system built in Node.js that allows attendants to manage information in a database, using CRUD operations (Create, Read, Update, and Delete).
 <br><br>
 
-## Dicas de uso
-* Link para o site: [crud1-kauamoreno2005.b4a.run/](crud1-kauamoreno2005.b4a.run/)
-* O sevidor é dasabilitado quando fica inativo por 30 min, por isso o site pode demorar 1 min para entrar<br>
+## Usage Tips
+* Website link: [crud1-kauamoreno2005.b4a.run/](https://crud1-kauamoreno2005.b4a.run/)
+* The server is disabled after 30 minutes of inactivity, so the website may take up to 1 minute to load initially.<br>
 
-#### Usuario e senha de administrador:
-* <b>login:</b> admin - <b>senha:</b> admin
-* <b>login:</b> pedro - <b>senha:</b> senhaforte
-* <b>login:</b> ana - <b>senha:</b> senhasegura
+#### Administrator usernames and passwords:
+* <b>login:</b> admin - <b>password:</b> admin  
+* <b>login:</b> pedro - <b>password:</b> senhaforte  
+* <b>login:</b> ana - <b>password:</b> senhasegura  
 
 <br>
 
-## Fluxograma
+## Flowchart
 
 <img width="650" alt="PWBE" src="https://user-images.githubusercontent.com/119445003/229531857-6d3a7d36-4159-49fc-a828-2cce7b55b050.png">
 
 <br>
 
-## Licença
-Este projeto está sob a licença MIT, para mais informações consulte o arquivo [LICENSE](LICENSE) .
-<br><br>
+## License
+This project is licensed under the **GNU General Public License v3.0**.  
+See the [LICENSE](LICENSE) and [NOTICE](NOTICE) files for more details.
 
-> Feito por Kauã Moreno 
+<br>
+
+> Made by Kauã Moreno 
 
 [![linkedin](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/kauamoreno/)
 [![email](https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:kaua.moreno2005@gmail.com)
